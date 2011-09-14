@@ -1,8 +1,8 @@
 
     table {
-        border: medium none;
+        border: thin #302B2F;
         width: 100%;
-        background-color: #F7F7F7;
+        background-color: #302B2F;
     }
     table tbody tr > td {
         padding: 5px;
@@ -15,7 +15,9 @@
     }
     th {
         padding: 5px;
-        text-shadow: 0 1px 0 #FFF;
+        text-shadow: 0 1px 0 #769666;
+        background-color: #302B2F;
+        color: white;
     }
 
     th, td {
@@ -33,13 +35,24 @@
     tr.header{
         background-color: #BABABA;
     }
-
+    #header{
+        padding-top: 0px;
+    }
+    .wrapper {
+        height: auto !important;
+        margin: 0 auto -73px;
+        min-height: 100%;
+    }
     .bg-color1{
-        background-color: #274040;
+        background-color: #827971;
     }
 
     .bg-color2{
-        background-color: #827971;
+        background-color: #769666;
+    }
+
+    .bg-color3{
+        background-color: #302B2F;
     }
 	.logo{
 		font-family: 'GoudyBookletter1911Regular';

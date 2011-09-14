@@ -35,16 +35,16 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="20" selection-start="934" selection-end="934" vertical-scroll-proportion="-15.038462">
+            <state line="30" column="54" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-11.769231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="34" selection-start="97" selection-end="97" vertical-scroll-proportion="0.11908932">
+            <state line="2" column="28" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -68,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/farms/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="31" selection-start="239" selection-end="239" vertical-scroll-proportion="-4.576923">
+            <state line="5" column="189" selection-start="211" selection-end="211" vertical-scroll-proportion="0.1559633">
               <folding />
             </state>
           </provider>
@@ -674,13 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/farms/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="239" selection-end="239" vertical-scroll-proportion="-4.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/farms/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="50" selection-start="148" selection-end="148" vertical-scroll-proportion="-5.8846154">
@@ -718,14 +711,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="934" selection-end="934" vertical-scroll-proportion="-15.038462">
+        <state line="30" column="54" selection-start="1294" selection-end="1294" vertical-scroll-proportion="-11.769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="97" selection-end="97" vertical-scroll-proportion="0.11908932">
+        <state line="2" column="28" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/farms/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="189" selection-start="211" selection-end="211" vertical-scroll-proportion="0.1559633">
           <folding />
         </state>
       </provider>
