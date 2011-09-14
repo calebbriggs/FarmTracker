@@ -1,0 +1,23 @@
+<h1 class="logo inline">Farms</h1>
+<a class="button button-add inline f-right" href="/farms/new"> <span class="grid_1 alpha"><h3>Farm</h3></span></a>
+<table>
+  <tr class="header">
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @farms.each do |farm| %>
+  <tr>
+    <td><%= farm.name %></td>
+    <td><%= link_to 'Show', farm %></td>
+    <td><%= link_to 'Edit', edit_farm_path(farm) %></td>
+    <td><%= link_to 'Destroy', farm, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

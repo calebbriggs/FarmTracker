@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head class="bg-color1">
+  <title>Farm Tracker</title>
+  <%= stylesheet_link_tag "/stylesheets/960" %>
+  <%= stylesheet_link_tag "/stylesheets/style" %>
+  <%= stylesheet_link_tag "/stylesheets/scaffold" %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="bg-color2">
+    <div>
+        <div class="container_12">
+          <a href="/">
+            <div class="grid_1">
+                <img class="inline" src="../images/bull.png">
+            </div>
+            <div class="grid_2" style="padding-left: 15px;">
+                <h1 class="logo inline">Farm <br/> <br/>&nbsp Tracker</h1>
+            </div>
+          </a>
+          <div class="grid_8" style="padding-top: 35px;">
+            <a href="/users"> <span class="grid_2 alpha bg-color1 nav"><h3 class="white">Users</h3></span></a>
+            <a href="/farms"> <span class="grid_2 alpha bg-color1 nav"><h3 class="white">Farms</h3></span></a>
+          </div>
+
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+     <div class="container_12">
+         <%= yield %>
+     </div>
+
+
+
+</body>
+</html>

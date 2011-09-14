@@ -1,0 +1,27 @@
+<%= form_for(@farm) do |f| %>
+  <% if @farm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@farm.errors.count, "error") %> prohibited this farm from being saved:</h2>
+
+      <ul>
+      <% @farm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br />
+
+        <%= f.select(:user_id, options_from_collection_for_select(User.all, :id, :userName)) %>
+
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
