@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tag: MyString
+  description: MyString
+  sex: MyString
+  age: MyString
+  weight: 1
+  farm: 
+  breed: MyString
+  type: 
+
+two:
+  tag: MyString
+  description: MyString
+  sex: MyString
+  age: MyString
+  weight: 1
+  farm: 
+  breed: MyString
+  type: 

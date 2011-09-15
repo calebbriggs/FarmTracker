@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110913193750) do
+ActiveRecord::Schema.define(:version => 20110915135437) do
+
+  create_table "animals", :force => true do |t|
+    t.string   "tag"
+    t.string   "description"
+    t.string   "sex"
+    t.string   "age"
+    t.integer  "weight"
+    t.integer  "farm_id"
+    t.string   "breed"
+    t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "animals", ["farm_id"], :name => "index_animals_on_farm_id"
 
   create_table "farms", :force => true do |t|
     t.string   "name"

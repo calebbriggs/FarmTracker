@@ -1,4 +1,6 @@
 FarmTracker::Application.routes.draw do
+  resources :animals
+
   resources :farms
 
   resources :users
