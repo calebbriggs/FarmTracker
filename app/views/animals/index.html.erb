@@ -1,37 +1,38 @@
-<h1 class="logo inline">Animals</h1>
-<a class="button button-add inline f-right" href="/animals/new"> <span class="grid_1 alpha"><h3>Animal</h3></span></a>
-<table>
-  <tr class="header">
-    <th>Tag</th>
-    <th>Description</th>
-    <th>Sex</th>
-    <th>Age</th>
-    <th>Weight</th>
-    <th>Farm</th>
-    <th>Breed</th>
-    <th>Type</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="grid_12">
+      <h1 class="logo inline">Animals</h1>
+      <a class="button button-add inline f-right" href="/animals/new"> <span class="grid_1 alpha"><h3>Animal</h3></span></a>
+      <table>
+        <tr class="header">
+          <th>Tag</th>
+          <th>Description</th>
+          <th>Sex</th>
+          <th>Age</th>
+          <th>Weight</th>
+          <th>Farm</th>
+          <th>Breed</th>
+          <th>Type</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
 
-<% @animals.each do |animal| %>
-  <tr>
-    <td><%= animal.tag %></td>
-    <td><%= animal.description %></td>
-    <td><%= animal.sex %></td>
-    <td><%= animal.age %></td>
-    <td><%= animal.weight %></td>
-    <td><%= animal.farm.name %></td>
-    <td><%= animal.breed %></td>
-    <td><%= animal.type %></td>
-    <td><%= link_to 'Show', animal %></td>
-    <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
-    <td><%= link_to 'Destroy', animal, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+        <% @animals.each do |animal| %>
+            <tr>
+              <td><%= animal.tag %></td>
+              <td><%= animal.description %></td>
+              <td><%= animal.sex %></td>
+              <td><%= animal.age %></td>
+              <td><%= animal.weight %></td>
+              <td><%= animal.farm.name %></td>
+              <td><%= animal.breed %></td>
+              <td><%= animal.type %></td>
+              <td><%= link_to image_tag("../images/open.png", :title => 'Open'), animal %></td>
+              <td><%= link_to image_tag("../images/edit.png", :title => 'Edit'), edit_animal_path(animal) %></td>
+              <td><%= link_to image_tag("../images/delete.png", :title => 'Delete'), animal, :confirm => 'Are you sure?', :method => :delete %></td>
+            </tr>
+        <% end %>
+      </table>
 
-<br />
-
+      <br />
+</div>
 

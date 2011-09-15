@@ -21,9 +21,9 @@
     <td><%= user.lastName %></td>
     <td><%= user.email %></td>
     <td><%= user.phoneNumber %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to image_tag("../images/open.png", :title => 'Open'), user %></td>
+    <td><%= link_to image_tag("../images/edit.png", :title => 'Edit'), edit_user_path(user) %></td>
+    <td><%= link_to image_tag("../images/delete.png", :title => 'Delete'), user, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
