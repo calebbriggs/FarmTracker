@@ -26,12 +26,17 @@
                     </div>
               </a>
               <div class="grid_8" style="padding-top: 35px;">
-                <a href=<%= users_path%>> <span class="grid_2 alpha bg-color3 nav"><h3 class="white">Users</h3></span></a>
                 <a href=<%= farms_path %>> <span class="grid_2 alpha bg-color3 nav"><h3 class="white">Farms</h3></span></a>
+                <a href=<%= herds_path %>> <span class="grid_2 alpha bg-color3 nav"><h3 class="white">Herds</h3></span></a>
                 <a href=<%= animals_path %>> <span class="grid_2 alpha bg-color3 nav"><h3 class="white">Animals</h3></span></a>
               </div>
+
+
            <div class="clear"></div>
          </div>
+      <%= link_to image_tag("../images/edit.png", :title => 'Edit User Info'), edit_user_path(@logged_user), :class =>"f-right inline", :style => "padding-right: 10px;" if @logged_user  %>
+      <%= link_to @logged_user.userName + ' logout', :logout, :class =>"f-right inline white", :style => "padding-right: 10px;" if @logged_user  %>
+
     </div>
     <div class="container_12 bg-color3" style="padding-top: 10px;"></div>
      <div class="clear"></div>

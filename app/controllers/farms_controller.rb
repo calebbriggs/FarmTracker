@@ -2,7 +2,7 @@ class FarmsController < ApplicationController
   # GET /farms
   # GET /farms.json
   def index
-    @farms = Farm.all
+    @farms = Farm.where(:user_id => @logged_user.id)
 
     respond_to do |format|
       format.html # index.html.erb

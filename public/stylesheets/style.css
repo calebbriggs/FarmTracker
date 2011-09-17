@@ -98,3 +98,9 @@
         float: right;
         clear: none;
     }
+    a{
+        border: none;
+    }
+    img {
+        border: none;
+    }

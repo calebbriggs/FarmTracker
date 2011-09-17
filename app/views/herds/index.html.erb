@@ -1,0 +1,29 @@
+<div class="grid_12">
+    <h1 class="inline logo">Herds</h1>
+    <a class="button button-add inline f-right" href=<%= new_herd_path %>> <span class="grid_1 alpha"><h3>Herd</h3></span></a>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Farm</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+    <% @herds.each do |herd| %>
+      <tr>
+        <td><%= herd.name %></td>
+        <td><%= herd.description %></td>
+        <td><%= herd.farm.name if herd.farm %></td>
+        <td><%= link_to image_tag("../images/open.png", :title => 'Open'), herd %></td>
+        <td><%= link_to image_tag("../images/edit.png", :title => 'Edit'), edit_herd_path(herd) %></td>
+        <td><%= link_to image_tag("../images/delete.png", :title => 'Delete'), herd, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </table>
+
+    <br />
+
+
+</div>

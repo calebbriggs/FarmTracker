@@ -1,0 +1,22 @@
+<div class="grid_12">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <b>Name:</b>
+      <%= @herd.name %>
+    </p>
+
+    <p>
+      <b>Description:</b>
+      <%= @herd.description %>
+    </p>
+
+    <p>
+      <b>Farm:</b>
+      <%= @herd.farm.name if @herd.farm %>
+    </p>
+
+
+    <%= link_to 'Edit', edit_herd_path(@herd) %> |
+    <%= link_to 'Back', herds_path %>
+</div>

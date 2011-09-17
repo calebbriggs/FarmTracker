@@ -1,8 +1,0 @@
-class LabelValue
-# name the accessors. Label and Value
-  def initialize(label,value)
-    @Label, @Value = label, value
-  end
-
-attr_accessor :label, :value
-end

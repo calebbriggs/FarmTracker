@@ -1,0 +1,24 @@
+
+
+<div class="prefix_3 grid_6 suffix_3">
+	<div>
+		<div class="inner">
+			<div class="hd bg-color1"><h1>Login</h1></div>
+            <p id="warning"><%= flash[:warning] %></p>
+			<div class="bd bg-color1">
+            <%= form_for :user, :url => "/login" do |f| %>
+             <div class="field">
+                <%= f.label :userName %><br/>
+                <%= f.text_field :userName %>
+             </div>
+             <div class="field">
+                <%= f.label :password %><br/>
+                <%= f.password_field :password %>
+             </div>
+             <%= f.submit "Login" %>
+			<% end %><br/>
+            <%= link_to 'New User ?', :new_user %>
+			</div>
+		</div>
+	</div>
+</div>
