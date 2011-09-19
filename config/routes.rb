@@ -1,4 +1,6 @@
 FarmTracker::Application.routes.draw do
+  resources :posts
+
   get "/login" => "application#login", :as => :login_form
   post "/login" => "application#login", :as => :login
   get "/logout" => "application#logout", :as => :logout

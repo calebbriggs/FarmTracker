@@ -3,6 +3,7 @@ require 'digest/sha2'
 class User < ActiveRecord::Base
 	validates :userName, :uniqueness => true, :presence => true
   has_many :Farms
+  has_many :Posts
 
   attr_accessor :password_confirmation
   attr_reader :password

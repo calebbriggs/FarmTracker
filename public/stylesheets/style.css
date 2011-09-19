@@ -19,6 +19,23 @@
         background-color: #302B2F;
         color: white;
     }
+    .post-head {
+        font-size: 24px;
+        text-shadow: 0 1px 0 #769666;
+        background-color: #302B2F;
+        color: white;
+        padding: 5px 0px 5px 5px;
+    }
+    .post-foot {
+        font-size: 12px;
+        background-color: #769666;
+        color: #274040;
+        padding: 0px 0px 1px 5px;
+    }
+    .post-content{
+          padding: 5px 0px 5px 5px;
+          background-color: #A69B90;
+    }
 
     th, td {
         border: 1px solid #CCCCCC;
