@@ -49,6 +49,11 @@
     .nav{
         margin-right: 1px;
     }
+    span.nav:hover{
+        background-color: #A69B90;
+        text-decoration: none;
+    }
+
     tr.header{
         background-color: #BABABA;
     }
@@ -117,7 +122,9 @@
     }
     a{
         border: none;
+        text-decoration: none;
     }
+
     img {
         border: none;
     }
