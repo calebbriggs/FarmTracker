@@ -44,6 +44,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.16, ruby-1.8.7-p334) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.3.2, ruby-1.8.7-p334) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v2.2.1, ruby-1.8.7-p334) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="recaptcha (v0.3.1, ruby-1.8.7-p334) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.14.6, ruby-1.8.7-p334) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.1.1, ruby-1.8.7-p334) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-cache (v1.0.3, ruby-1.8.7-p334) [gem]" level="application" />

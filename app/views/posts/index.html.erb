@@ -9,7 +9,7 @@
           <span class="inline f-right" style="padding-right: 5px;"><%= link_to image_tag("../images/delete.png", :title => 'Delete Post'), post, :confirm => 'Are you sure?', :method => :delete, :class =>"f-right inline", :style => "padding-right: 5px;" if @logged_user==post.user  %></span>
           <span class="inline f-right" style="padding-right: 5px;"><%= link_to image_tag("../images/edit.png", :title => 'Edit Post'), edit_post_path(post), :class =>"f-right inline", :style => "padding-right: 5px;" if @logged_user==post.user  %></span>
         </div>
-        <div class="grid_12 alpha post-foot"><span class="inline"><%= post.created_at.strftime('%B %d, %Y %I:%M ') %></span><span class="inline f-right" style="padding-right: 5px;"><%=post.user.userName %></span> </div>
+        <div class="grid_12 alpha post-foot"><span class="inline"><%= post.created_at.strftime('%B %d, %Y %I:%M %p') %></span><span class="inline f-right" style="padding-right: 5px;"><%=post.user.userName %></span> </div>
         <div class="grid_12 alpha post-content"><%= post.content %></div>
       </div>
     <% end %>

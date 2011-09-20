@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require "net/http"
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -44,5 +45,8 @@ module FarmTracker
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+    config.gem "recaptcha", :lib => "recaptcha/rails"
+
   end
 end

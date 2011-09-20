@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_filter :authenticate, :only => [:new]
+  skip_before_filter :authenticate, :only => [:new, :create]
   # GET /users
   # GET /users.json
   def index
@@ -44,14 +44,15 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
 
     respond_to do |format|
-      if @user.save
+      if @user.save and verify_recaptcha
         format.html { redirect_to @user, :notice => 'User was successfully created.' }
         format.json { render :json => @user, :status => :created, :location => @user }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => :new }
         format.json { render :json => @user.errors, :status => :unprocessable_entity }
       end
     end
+
   end
 
   # PUT /users/1
@@ -60,7 +61,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
 
     respond_to do |format|
-      if @user.update_attributes(params[:user])
+      if @user.update_attributes(params[:user]) and verify_recaptcha
         format.html { redirect_to @user, :notice => 'User was successfully updated.' }
         format.json { head :ok }
       else
