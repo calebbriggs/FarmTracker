@@ -2,7 +2,7 @@ class HerdsController < ApplicationController
   # GET /herds
   # GET /herds.json
   def index
-    @herds = Herd.all#Herd.joins(:farm).where(:farm => {:user_id => @logged_user.id})
+    @herds = Herd.joins(:farm).where(:farms => {:user_id => @logged_user.id})
 
     respond_to do |format|
       format.html # index.html.erb

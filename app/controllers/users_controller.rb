@@ -4,10 +4,16 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render :json => @users }
+    if !@logged_user.isSuperUser
+        respond_to do |format|
+          format.html {redirect_to :home}
+          format.json { render :json => @users }
+        end
+    else
+        respond_to do |format|
+          format.html # index.html.erb
+          format.json { render :json => @users }
+        end
     end
   end
 
@@ -15,10 +21,16 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render :json => @user }
+     if !@logged_user.isSuperUser
+        respond_to do |format|
+          format.html {redirect_to :home}
+          format.json { render :json => @users }
+        end
+    else
+      respond_to do |format|
+        format.html # show.html.erb
+        format.json { render :json => @user }
+      end
     end
   end
 
@@ -36,6 +48,9 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
+    if @logged_user != @user
+      @user = @logged_user
+    end
   end
 
   # POST /users
@@ -59,7 +74,9 @@ class UsersController < ApplicationController
   # PUT /users/1.json
   def update
     @user = User.find(params[:id])
-
+    if @logged_user != @user
+      @user = @logged_user
+    end
     respond_to do |format|
       if @user.update_attributes(params[:user]) and verify_recaptcha
         format.html { redirect_to @user, :notice => 'User was successfully updated.' }
@@ -69,6 +86,7 @@ class UsersController < ApplicationController
         format.json { render :json => @user.errors, :status => :unprocessable_entity }
       end
     end
+
   end
 
   # DELETE /users/1

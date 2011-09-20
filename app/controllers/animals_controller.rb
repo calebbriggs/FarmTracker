@@ -2,7 +2,7 @@ class AnimalsController < ApplicationController
   # GET /animals
   # GET /animals.json
   def index
-    @animals = Animal.all
+    @animals = Animal.joins(:farm).where(:farms => {:user_id => @logged_user.id})
 
     respond_to do |format|
       format.html # index.html.erb
