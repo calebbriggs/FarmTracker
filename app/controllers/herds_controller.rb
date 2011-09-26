@@ -25,7 +25,6 @@ class HerdsController < ApplicationController
   # GET /herds/new.json
   def new
     @herd = Herd.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render :json => @herd }

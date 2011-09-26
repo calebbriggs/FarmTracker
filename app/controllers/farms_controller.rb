@@ -14,7 +14,7 @@ class FarmsController < ApplicationController
   # GET /farms/1.json
   def show
     @farm = Farm.find(params[:id])
-
+    @herds = Herd.where(:farm_id => @farm.id)
     respond_to do |format|
       format.html # show.html.erb
       format.json { render :json => @farm }
@@ -41,7 +41,7 @@ class FarmsController < ApplicationController
   # POST /farms.json
   def create
     @farm = Farm.new(params[:farm])
-
+    @farm.user = @logged_user;
     respond_to do |format|
       if @farm.save
         format.html { redirect_to @farm, :notice => 'Farm was successfully created.' }
@@ -57,7 +57,7 @@ class FarmsController < ApplicationController
   # PUT /farms/1.json
   def update
     @farm = Farm.find(params[:id])
-
+    @farm.user = @logged_user;
     respond_to do |format|
       if @farm.update_attributes(params[:farm])
         format.html { redirect_to @farm, :notice => 'Farm was successfully updated.' }

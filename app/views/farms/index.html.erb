@@ -4,6 +4,7 @@
 <table>
   <tr class="header">
     <th>Name</th>
+    <th>Acres</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,6 +13,7 @@
 <% @farms.each do |farm| %>
   <tr>
     <td><%= farm.name %></td>
+    <td><%= farm.acres %></td>
     <td><%= link_to image_tag("../images/open.png", :title => 'Open'), farm %></td>
     <td><%= link_to image_tag("../images/edit.png", :title => 'Edit'), edit_farm_path(farm) %></td>
     <td><%= link_to image_tag("../images/delete.png", :title => 'Delete'), farm, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -5,7 +5,30 @@
       <b>Name:</b>
       <%= @farm.name %>
     </p>
+    <p>
+      <b>Acres:</b>
+      <%= @farm.acres %>
+    </p>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
 
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+    <% @herds.each do |herd| %>
+      <tr>
+        <td><%= herd.name %></td>
+        <td><%= herd.description %></td>
+        <td><%= link_to image_tag("../images/open.png", :title => 'Open'), herd %></td>
+        <td><%= link_to image_tag("../images/edit.png", :title => 'Edit'), edit_herd_path(herd) %></td>
+        <td><%= link_to image_tag("../images/delete.png", :title => 'Delete'), herd, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </table>
     <p>
       <b>User:</b>
       <%= @farm.user.firstName+" "+@farm.user.lastName %>

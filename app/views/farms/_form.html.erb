@@ -16,10 +16,8 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :user %><br />
-
-        <%= f.select(:user_id, options_from_collection_for_select(User.all, :id, :userName)) %>
-
+    <%= f.label :acres %> <br/>
+    <%= f.text_field  :acres %>
   </div>
   <div class="actions">
     <%= f.submit %>

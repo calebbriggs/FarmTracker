@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110919180236) do
+ActiveRecord::Schema.define(:version => 20110926205723) do
 
   create_table "animals", :force => true do |t|
     t.string   "tag"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20110919180236) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "acres"
   end
 
   add_index "farms", ["user_id"], :name => "index_farms_on_user_id"
