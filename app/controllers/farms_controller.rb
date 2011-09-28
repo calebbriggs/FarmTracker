@@ -3,6 +3,9 @@ class FarmsController < ApplicationController
   # GET /farms.json
   def index
     @farms = Farm.where(:user_id => @logged_user.id)
+    total_acres = 0
+    @farms.each {|farm| total_acres += farm.acres.to_i}
+    @total_acres = total_acres
 
     respond_to do |format|
       format.html # index.html.erb
@@ -80,4 +83,6 @@ class FarmsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+
 end
