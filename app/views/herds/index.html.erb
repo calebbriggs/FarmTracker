@@ -1,10 +1,12 @@
 <div class="grid_12">
-    <h1 class="inline logo">Herds</h1>
+    <h1 class="inline logo grid_4">Herds</h1>
+    <h1 class="logo inline grid_4">Total Quantity: <%=   @total_quantity %></h1>
     <a class="button button-add inline f-right" href=<%= new_herd_path %>> <span class="grid_1 alpha"><h3>Herd</h3></span></a>
     <table>
       <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Quantity</th>
         <th>Farm</th>
         <th></th>
         <th></th>
@@ -15,6 +17,7 @@
       <tr>
         <td><%= herd.name %></td>
         <td><%= herd.description %></td>
+        <td><%= herd.quantity %></td>
         <td><%= herd.farm.name if herd.farm %></td>
         <td><%= link_to image_tag("../images/open.png", :title => 'Open'), herd %></td>
         <td><%= link_to image_tag("../images/edit.png", :title => 'Edit'), edit_herd_path(herd) %></td>

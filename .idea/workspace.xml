@@ -22,6 +22,25 @@
     <flatten value="false" />
     <groupTables value="false" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/app/views/farms/index.html.erb">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="2" column="0" selection-start="64" selection-end="134" vertical-scroll-proportion="0.06238532">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="FarmTracker" />
   </component>
@@ -36,10 +55,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/farms/index.html.erb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/herds/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="42" selection-start="106" selection-end="106" vertical-scroll-proportion="0.06238532">
+            <state line="13" column="21" selection-start="358" selection-end="358" vertical-scroll-proportion="-6.5384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/herds/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="72" selection-start="140" selection-end="140" vertical-scroll-proportion="-1.3076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="herds_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/herds_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="5" selection-start="199" selection-end="199" vertical-scroll-proportion="0.17863397">
               <folding />
             </state>
           </provider>
@@ -49,15 +86,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/farms/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="58" selection-start="274" selection-end="274" vertical-scroll-proportion="-10.461538">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="farms_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/farms_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="24" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,9 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
-        <option value="C:/Ruby/lib/ruby/gems/1.8/gems/recaptcha-0.3.1/lib/recaptcha/verify.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/models/herd.rb" />
@@ -83,12 +108,15 @@
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/app/controllers/herds_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/farms/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/farms/show.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/960.css" />
         <option value="$PROJECT_DIR$/app/controllers/farms_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/farms/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/herds/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/herds/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/herds/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/herds_controller.rb" />
       </list>
     </option>
   </component>
@@ -202,6 +230,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FarmTracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FarmTracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -229,28 +275,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="herds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FarmTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FarmTracker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="farms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -688,7 +712,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294621" sideWeight="0.67001116" order="3" side_tool="false" content_ui="tabs" />
@@ -763,21 +787,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="155" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.39425287" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/herd.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="359" selection-end="359" vertical-scroll-proportion="0.31264368" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="70" selection-start="271" selection-end="271" vertical-scroll-proportion="0.09770115">
@@ -805,18 +814,6 @@
         <state line="121" column="36" selection-start="2750" selection-end="2750" vertical-scroll-proportion="0.7264368" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/herds_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="65" selection-start="677" selection-end="677" vertical-scroll-proportion="0.86339754" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/herds/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="55" selection-start="393" selection-end="393" vertical-scroll-proportion="0.43669724">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/960.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="99" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
@@ -831,9 +828,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/farms/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110928140920_add_quantity_to_herd.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="514" selection-end="514" vertical-scroll-proportion="-12.423077">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/herds/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="35" selection-start="253" selection-end="253" vertical-scroll-proportion="0.43669724">
           <folding />
         </state>
       </provider>
@@ -845,16 +849,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/herds/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="358" selection-end="358" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/farms_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="24" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
+        <state line="6" column="24" selection-start="190" selection-end="190" vertical-scroll-proportion="0.17863397">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/farms/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="42" selection-start="106" selection-end="106" vertical-scroll-proportion="0.06238532">
+        <state line="2" column="0" selection-start="64" selection-end="134" vertical-scroll-proportion="0.06238532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/farms/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="36" selection-start="514" selection-end="514" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/herds/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="72" selection-start="140" selection-end="140" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/herds_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="199" selection-end="199" vertical-scroll-proportion="0.17863397">
           <folding />
         </state>
       </provider>

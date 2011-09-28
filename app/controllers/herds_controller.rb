@@ -3,7 +3,9 @@ class HerdsController < ApplicationController
   # GET /herds.json
   def index
     @herds = Herd.joins(:farm).where(:farms => {:user_id => @logged_user.id})
-
+    total_quantity = 0
+    @herds.each {|herd| total_quantity += herd.quantity.to_i}
+    @total_quantity = total_quantity
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @herds }

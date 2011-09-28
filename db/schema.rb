@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110926205723) do
+ActiveRecord::Schema.define(:version => 20110928140920) do
 
   create_table "animals", :force => true do |t|
     t.string   "tag"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20110926205723) do
     t.integer  "farm_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "quantity"
   end
 
   add_index "herds", ["farm_id"], :name => "index_herds_on_farm_id"

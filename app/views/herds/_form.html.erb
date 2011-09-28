@@ -19,6 +19,10 @@
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </div>
+<div class="field">
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </div>
   <div class="field">
     <%= f.label :farm %><br />
     <%=  f.select(:farm_id,options_from_collection_for_select(Farm.all, :id, :name)) %>
