@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :farm %><br />
-    <%=  f.select(:farm_id,options_from_collection_for_select(Farm.all, :id, :name)) %>
+    <%=  f.select(:farm_id, options_from_collection_for_select(Farm.where(:user_id => @logged_user.id), :id, :name)) %>
   </div>
   <div class="actions">
     <%= f.submit %>

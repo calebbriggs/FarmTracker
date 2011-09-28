@@ -27,6 +27,26 @@
     </table>
 
     <br />
+  <h1 class="inline logo grid_4">Herd Types</h1>
+  <div class="clear"></div>
+  <div class="grid_6 alpha">
+  <table>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+
+        </tr>
+
+      <% @herd_types.each do |herd| %>
+        <tr>
+          <td><%= herd.name %></td>
+          <td><%= herd.quantity %></td>
+
+        </tr>
+      <% end %>
+      </table>
+  </div>
+      <br />
 
 
 </div>
