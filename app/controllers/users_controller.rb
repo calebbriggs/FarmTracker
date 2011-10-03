@@ -28,7 +28,7 @@ class UsersController < ApplicationController
         end
     else
       respond_to do |format|
-        format.html # show.html.erb
+        format.html # indexx.html.erb
         format.json { render :json => @user }
       end
     end

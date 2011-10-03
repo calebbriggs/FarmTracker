@@ -24,8 +24,8 @@ class FarmsControllerTest < ActionController::TestCase
     assert_redirected_to farm_path(assigns(:farm))
   end
 
-  test "should show farm" do
-    get :show, :id => @farm.to_param
+  test "should index farm" do
+    get :index, :id => @farm.to_param
     assert_response :success
   end
 

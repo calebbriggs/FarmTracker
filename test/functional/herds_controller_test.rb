@@ -24,8 +24,8 @@ class HerdsControllerTest < ActionController::TestCase
     assert_redirected_to herd_path(assigns(:herd))
   end
 
-  test "should show herd" do
-    get :show, :id => @herd.to_param
+  test "should index herd" do
+    get :index, :id => @herd.to_param
     assert_response :success
   end
 

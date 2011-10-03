@@ -16,7 +16,7 @@ class AnimalsController < ApplicationController
     @animal = Animal.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # index.html.erbb
       format.json { render :json => @animal }
     end
   end

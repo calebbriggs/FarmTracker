@@ -10,6 +10,8 @@ FarmTracker::Application.routes.draw do
 
   resources :farms
 
+  resources :ag_info
+
   resources :users
   match "/users" => "users#index" , :as =>  :users
   match "/users/new" => "users#new", :as => :new_user

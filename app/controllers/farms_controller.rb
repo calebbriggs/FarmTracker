@@ -19,7 +19,7 @@ class FarmsController < ApplicationController
     @farm = Farm.find(params[:id])
     @herds = Herd.where(:farm_id => @farm.id)
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # index.html.erbb
       format.json { render :json => @farm }
     end
   end

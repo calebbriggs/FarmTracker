@@ -24,8 +24,8 @@ class AnimalsControllerTest < ActionController::TestCase
     assert_redirected_to animal_path(assigns(:animal))
   end
 
-  test "should show animal" do
-    get :show, :id => @animal.to_param
+  test "should index animal" do
+    get :index, :id => @animal.to_param
     assert_response :success
   end
 

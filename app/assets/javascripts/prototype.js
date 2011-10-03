@@ -1899,7 +1899,7 @@ Element.Methods = {
 
   toggle: function(element) {
     element = $(element);
-    Element[Element.visible(element) ? 'hide' : 'show'](element);
+    Element[Element.visible(element) ? 'hide' : 'index'](element);
     return element;
   },
 
